@@ -19,6 +19,7 @@
 
 using Rhetos.AspNetFormsAuth;
 using Rhetos.Utilities;
+using Rhetos.Utilities.ApplicationConfiguration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -37,7 +38,11 @@ namespace InitAspNetDatabase
             string errorMessage = null;
             try
             {
-                Paths.InitializeRhetosServerRootPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
+                var configuration = new ConfigurationBuilder()
+                    .AddRhetosAppConfiguration(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."))
+                    .Build();
+                LegacyUtilities.Initialize(configuration);
+
                 CreateMembershipProviderTables();
             }
             catch (ApplicationException ex)

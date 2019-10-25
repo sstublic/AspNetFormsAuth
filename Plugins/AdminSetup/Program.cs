@@ -26,6 +26,7 @@ using Rhetos.Logging;
 using Rhetos.Persistence;
 using Rhetos.Security;
 using Rhetos.Utilities;
+using Rhetos.Utilities.ApplicationConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -51,7 +52,6 @@ namespace AdminSetup
             string errorMessage = null;
             try
             {
-                Paths.InitializeRhetosServerRootPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
                 Exception createAdminUserException = null;
                 try
                 {
@@ -105,13 +105,17 @@ namespace AdminSetup
 
         private static IContainer CreateRhetosContainer()
         {
-            // Specific registrations and initialization:
-            Plugins.SetInitializationLogging(new ConsoleLogProvider());
+            var configurationProvider = new ConfigurationBuilder()
+                .AddRhetosAppConfiguration(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."))
+                .AddConfigurationManagerConfiguration()
+                .Build();
+
+            var initializationContext = new InitializationContext(configurationProvider, new ConsoleLogProvider());
             ConsoleLogger.MinLevel = EventType.Info;
 
             // General registrations:
-            var builder = new ContainerBuilder();
-            builder.RegisterModule(new DefaultAutofacConfiguration(deploymentTime: false, deployDatabaseOnly: false));
+            var builder = new ContextContainerBuilder(initializationContext)
+                .AddRhetosRuntime();
 
             // Specific registrations override:
             builder.RegisterType<ProcessUserInfo>().As<IUserInfo>();
@@ -128,7 +132,6 @@ namespace AdminSetup
             Exception originalException = null;
             try
             {
-                Directory.SetCurrentDirectory(Paths.RhetosServerRootPath);
                 using (var container = CreateRhetosContainer())
                 {
                     try
