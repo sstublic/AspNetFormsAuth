@@ -34,14 +34,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac.Configuration">
-      <HintPath>..\..\packages\Autofac.Configuration.3.3.0\lib\net40\Autofac.Configuration.dll</HintPath>
+    <Reference Include="Autofac.Configuration, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.Configuration.4.0.0-beta6-248\lib\net45\Autofac.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac.Integration.Wcf">
-      <HintPath>..\..\packages\Autofac.Wcf.3.0.1\lib\net40\Autofac.Integration.Wcf.dll</HintPath>
+    <Reference Include="Autofac.Integration.Wcf, Version=4.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Autofac.Wcf.4.1.0\lib\net45\Autofac.Integration.Wcf.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -52,127 +52,139 @@
     <Reference Include="Ionic.Zip">
       <HintPath>..\..\packages\DotNetZip.1.9.3\lib\net20\Ionic.Zip.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Framework.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Framework.Configuration.1.0.0-beta6\lib\net45\Microsoft.Framework.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Framework.Configuration.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Framework.Configuration.Abstractions.1.0.0-beta6\lib\net45\Microsoft.Framework.Configuration.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.XmlTransform">
       <HintPath>..\..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NLog.4.5.4\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\..\packages\NLog.4.6.7\lib\net45\NLog.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Core">
-      <HintPath>..\..\packages\NuGet.Core.2.8.3\lib\net40-Client\NuGet.Core.dll</HintPath>
+    <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Compiler, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Compiler.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Compiler.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Compiler.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Compiler.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Configuration.Autofac, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Configuration.Autofac.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Configuration.Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.DatabaseGenerator, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.DatabaseGenerator.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.DatabaseGenerator.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.DatabaseGenerator.DefaultConcepts, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.DatabaseGenerator.DefaultConcepts.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.DatabaseGenerator.DefaultConcepts.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.DatabaseGenerator.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.DatabaseGenerator.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.DatabaseGenerator.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Deployment, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Deployment.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Deployment.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Deployment.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Deployment.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dom, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dom.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Dom.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dom.DefaultConcepts, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dom.DefaultConcepts.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.Dom.DefaultConcepts.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dom.DefaultConcepts.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dom.DefaultConcepts.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.Dom.DefaultConcepts.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dom.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dom.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Dom.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dsl, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dsl.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Dsl.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dsl.DefaultConcepts, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dsl.DefaultConcepts.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.Dsl.DefaultConcepts.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Dsl.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Dsl.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Dsl.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Extensibility, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Extensibility.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Extensibility.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Extensibility.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Extensibility.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Logging, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Logging.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Logging.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Logging.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Logging.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Persistence, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Persistence.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Persistence.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Persistence.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Persistence.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Persistence.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Processing, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Processing.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Processing.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Processing.DefaultCommands, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Processing.DefaultCommands.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.Processing.DefaultCommands.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Processing.DefaultCommands.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Processing.DefaultCommands.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.CommonConcepts.3.0.0-dev\lib\net472\Rhetos.Processing.DefaultCommands.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Processing.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Processing.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Processing.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Security, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Security.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Security.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Security.Interfaces, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Security.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Security.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.TestCommon, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.TestCommon.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.TestCommon.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Utilities, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Utilities.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.Web, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.Web.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.Web.dll</HintPath>
     </Reference>
     <Reference Include="Rhetos.XmlSerialization, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rhetos.3.0.0-dev19102520364f1bf0e\lib\net472\Rhetos.XmlSerialization.dll</HintPath>
+      <HintPath>..\..\packages\Rhetos.3.0.0-dev\lib\net472\Rhetos.XmlSerialization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Globalization" />
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Resources.ResourceManager" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Activation" />

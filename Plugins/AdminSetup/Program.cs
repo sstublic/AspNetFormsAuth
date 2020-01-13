@@ -19,14 +19,12 @@
 
 using Autofac;
 using Rhetos.AspNetFormsAuth;
-using Rhetos.Configuration.Autofac;
 using Rhetos.Dom.DefaultConcepts;
 using Rhetos.Extensibility;
 using Rhetos.Logging;
 using Rhetos.Persistence;
 using Rhetos.Security;
 using Rhetos.Utilities;
-using Rhetos.Utilities.ApplicationConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -39,6 +37,7 @@ using System.Web.Security;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using WebMatrix.WebData;
+using Rhetos;
 
 namespace AdminSetup
 {
@@ -114,7 +113,7 @@ namespace AdminSetup
             ConsoleLogger.MinLevel = EventType.Info;
 
             // General registrations:
-            var builder = new ContextContainerBuilder(initializationContext)
+            var builder = new RhetosContainerBuilder(initializationContext)
                 .AddRhetosRuntime();
 
             // Specific registrations override:
